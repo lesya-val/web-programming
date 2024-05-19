@@ -1,0 +1,47 @@
+.performers__items {
+	gap: 60px;
+}
+
+.performers__item {
+	max-width: 245px;
+	gap: 15px;
+}
+
+.performers__info {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	.circle__performers {
+		height: 4.4rem;
+		width: 4.4rem;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.performers__items {
+		align-items: center;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.circle__performers {
+		height: 7rem;
+		width: 7rem;
+	}
+
+	.performers__info {
+		font-size: 15px;
+	}
+
+	.performers__item {
+		max-width: 300px;
+		width: 100%;
+	}
+
+	.performers__name {
+		font-size: 18px;
+	}
+}

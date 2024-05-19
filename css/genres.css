@@ -1,0 +1,44 @@
+.genres__items {
+	max-width: 1000px;
+	gap: 110px;
+}
+
+.genres__item {
+	cursor: pointer;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 14rem;
+  width: 14rem;
+}
+
+
+@media screen and (max-width: 700px) {
+	.genres__items {
+		gap: 60px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.circle {
+		height: 12rem;
+		width: 12rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.circle {
+		height: 10rem;
+		width: 10rem;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.circle {
+		height: 8rem;
+		width: 8rem;
+	}
+}

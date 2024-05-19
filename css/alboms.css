@@ -1,0 +1,28 @@
+.alboms__items {
+	gap: 50px;
+}
+
+.alboms__item {
+	display: flex;
+	align-items: start !important;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.alboms__image {
+	width: 150px;
+	height: 150px;
+}
+
+.alboms__info {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+@media screen and (max-width: 425px) {
+	.alboms__image {
+		width: 120px;
+		height: 120px;
+	}
+}
