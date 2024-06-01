@@ -4,6 +4,7 @@
 @import './genres.css';
 @import './performers.css';
 @import './alboms.css';
+@import './form.css';
 
 .container {
 	padding: 50px;

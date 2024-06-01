@@ -6,27 +6,27 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="./css/style.css" />
-	<title>LogIn</title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<title>Registration</title>
 </head>
 
 <body>
 	<div class="register">
-		<h1 class="title">Вход</h1>
-		<form action="./php/login.php" method="post" class="form">
+		<h1 class="title">Регистрация</h1>
+		<form action="../php/register.php" method="post" class="form">
 			<div class="form__line">
-				<label for="login">Введите логин: </label>
+				<label for="login">Придумайте логин: </label>
 				<input class="form__input" type="text" id="login" placeholder="Логин" name="login" required>
 			</div>
 			<div class="form__line">
-				<label for="password">Введите пароль: </label>
+				<label for="password">Придумайте пароль: </label>
 				<input class="form__input" type="password" id="password" placeholder="Пароль" name="password" required>
 			</div>
-			<button class="form__button" type="submit" value="Register">Войти</button>
+			<button class="form__button" type="submit" value="Register">Зарегистрироваться</button>
 		</form>
 		<div class="form__text">
-			<p>Нет аккаунта?</p>
-			<a class="form__log" href="./pages/register_form.php">Зарегистрироваться</a>
+			<p>Уже есть аккаунт?</p>
+			<a class="form__log" href="./compositions_page.php">Войти</a>
 		</div>
 	</div>
 </body>
