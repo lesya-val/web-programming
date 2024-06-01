@@ -13,18 +13,21 @@
 }
 
 .list {
+	max-width: 1000px;
 	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .list__items {
+	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 .list__item {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
