@@ -56,7 +56,7 @@
 			<div class="container">
 				<div class="main__content content">
 					<h1 class="title">Композиции</h1>
-					<div class="list">
+					<nav class="list">
 						<ul class="list__items main__items">
 							<?php foreach ($compositions as $composition) : ?>
 								<li class="list__item main__item">
@@ -69,7 +69,7 @@
 								</li>
 							<?php endforeach; ?>
 						</ul>
-					</div>
+					</nav>
 				</div>
 			</div>
 		</section>

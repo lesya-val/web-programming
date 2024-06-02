@@ -21,7 +21,7 @@
 			<div class="container">
 				<div class="content">
 					<h1 class="title">Исполнители</h1>
-					<div class="list">
+					<nav class="list">
 						<ul class="list__items performers__items">
 							<?php foreach ($performers as $performer) : ?>
 								<li class="list__item performers__item">
@@ -35,7 +35,7 @@
 								</li>
 							<?php endforeach; ?>
 						</ul>
-					</div>
+					</nav>
 				</div>
 			</div>
 		</section>

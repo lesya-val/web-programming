@@ -21,7 +21,7 @@
 				<div class="container">
 					<div class="content">
 						<h1 class="title">Жанры</h1>
-						<div class="list">
+						<nav class="list">
 							<ul class="list__items genres__items">
 							<?php foreach ($genres as $genre) : ?>
 								<li class="list__item genres__item">
@@ -32,7 +32,7 @@
 								</li>
 							<?php endforeach; ?>
 							</ul>
-						</div>
+						</nav>
 					</div>
 				</div>
 			</section>

@@ -21,7 +21,7 @@
 			<div class="container">
 				<div class="content">
 					<h1 class="title">Альбомы</h1>
-					<div class="list">
+					<nav class="list">
 						<ul class="list__items alboms__items">
 							<?php foreach ($alboms as $albom) : ?>
 								<li class="list__item alboms__item">
@@ -36,7 +36,7 @@
 								</li>
 							<?php endforeach; ?>
 						</ul>
-					</div>
+					</nav>
 				</div>
 			</div>
 		</section>
