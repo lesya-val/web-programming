@@ -26,7 +26,7 @@
 							<?php foreach ($performers as $performer) : ?>
 								<li class="list__item performers__item">
 									<a href="./compositions_page.php">
-										<img class="circle__performers" src="../images/performers/<?php echo htmlspecialchars($performer['cover']); ?>.svg" alt="performer" />
+										<img class="circle__performers" src="../images/performers/<?php echo htmlspecialchars($performer['cover']); ?>.svg" alt="performer" onerror="this.src='../icons/stub.png'" />
 									</a>
 									<div class="performers__info">
 										<p class="performers__name"><?php echo htmlspecialchars($performer['artist']); ?></p>

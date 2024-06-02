@@ -26,7 +26,7 @@
 							<?php foreach ($genres as $genre) : ?>
 								<li class="list__item genres__item">
 									<a href="./compositions_page.php">
-											<img class="circle" src="../images/genres/<?php echo htmlspecialchars($genre['cover']); ?>.svg" alt="genre" />
+											<img class="circle" src="../images/genres/<?php echo htmlspecialchars($genre['cover']); ?>.svg" alt="genre" onerror="this.src='../icons/stub.png'" />
 										</a>
 										<p><?php echo htmlspecialchars($genre['name']); ?></p>
 								</li>

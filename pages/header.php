@@ -16,7 +16,7 @@
 			<div class="head">
 				<div class="logo">
 					<a href="./compositions_page.php" class="logo__icon">
-						<img src="../icons/airpods.svg" alt="airpods" />
+						<img src="../icons/airpods.svg" alt="airpods" onerror="this.src='../icons/stub.png'" />
 					</a>
 					<h2 class="logo__title">
 						<a href="./compositions_page.php">AudioDepo</a>

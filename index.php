@@ -6,6 +6,13 @@
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="AudioDepo">
+	<meta property="og:description" content="AudioDepo - это музыкальный портал, где вы найдете богатую коллекцию композиций, исполнителей, альбомов и жанров! Наш сайт создан для истинных меломанов и профессионалов в мире музыки, чтобы предоставить вам удобный доступ к разнообразной музыкальной информации и контенту.">
+	<meta property="og:url" content="http://audiodepo.rf.gd">
+	<meta property="og:site_name" content="Музыкальный портал">
+
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>AudioDepo</title>
 </head>

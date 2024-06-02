@@ -26,7 +26,7 @@
 							<?php foreach ($alboms as $albom) : ?>
 								<li class="list__item alboms__item">
 									<a href="./compositions_page.php">
-											<img class="alboms__image" src="../images/alboms/<?php echo htmlspecialchars($albom['cover']); ?>.svg" alt="albom" />
+											<img class="alboms__image" src="../images/alboms/<?php echo htmlspecialchars($albom['cover']); ?>.svg" alt="albom" onerror="this.src='../icons/stub.png'" />
 										</a>
 									<div class="alboms__info">
 										<p><?php echo htmlspecialchars($albom['name']); ?></p>

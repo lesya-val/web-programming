@@ -1,4 +1,5 @@
 <?php include '../php/compositions.php'; ?>
+<?php include '../pages/header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,41 +16,6 @@
 
 <body>
 	<div class="wrapper">
-		<!-- Header -->
-		<header class="header">
-			<div class="head">
-				<div class="logo">
-					<a href="compositions_page.php" class="logo__icon">
-						<img src="../icons/airpods.svg" alt="airpods" />
-					</a>
-					<h2 class="logo__title">
-						<a href="compositions_page.php">AudioDepo</a>
-					</h2>
-				</div>
-
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="../pages/genres_page.php" class="nav__link nav__link--active">Жанры</a>
-						</li>
-						<li class="nav__item">
-							<a href="../pages/performers_page.php" class="nav__link nav__link--hover-light">Исполнители</a>
-						</li>
-						<li class="nav__item">
-							<a href="../pages/alboms_page.php" class="nav__link nav__link--hover-light">Альбомы</a>
-						</li>
-					</ul>
-				</nav>
-
-				<!-- Burger-menu -->
-				<button class="icon" type="button">
-					<div class="icon__wrapper">
-						<div class="icon__menu">
-						</div>
-					</div>
-				</button>
-			</div>
-		</header>
 
 		<!-- Main -->
 		<section class="main">
@@ -60,7 +26,7 @@
 						<ul class="list__items main__items">
 							<?php foreach ($compositions as $composition) : ?>
 								<li class="list__item main__item">
-									<img class="main__image" src="../images/compositions/<?php echo htmlspecialchars($composition['cover']); ?>.svg" alt="composition" />
+									<img class="main__image" src="../images/compositions/<?php echo htmlspecialchars($composition['cover']); ?>.svg" alt="composition" onerror="this.src='../icons/stub.png'" />
 									<div class="main__info">
 										<p><?php echo htmlspecialchars($composition['name']); ?></p>
 										<p class="list__item-name"><?php echo htmlspecialchars($composition['artist']); ?></p>
