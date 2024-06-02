@@ -26,7 +26,7 @@
 		</form>
 		<div class="form__text">
 			<p>Уже есть аккаунт?</p>
-			<a class="form__log" href="./compositions_page.php">Войти</a>
+			<a class="form__log" href="../index.php">Войти</a>
 		</div>
 	</div>
 </body>

@@ -1,6 +1,6 @@
 <?php
 
-$link = mysqli_connect('localhost', 'root', '', 'audiodepo');
+$link = mysqli_connect('sql308.infinityfree.com', 'if0_36655666', 'UR83GKoHFxQ3', 'if0_36655666_audiodepo');
 
 if (!$link) {
 	die("Connection failed: " . mysqli_connect_error());
