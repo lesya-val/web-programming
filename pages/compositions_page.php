@@ -11,6 +11,9 @@
 	<meta name="description" content="Композиции">
 
 	<link rel="stylesheet" href="../css/style.css" />
+  <link type="image/x-icon" href="../airpods.svg" rel="shortcut icon">
+	<link type="Image/x-icon" href="../airpods.svg" rel="icon">
+
 	<title>Compositions</title>
 </head>
 

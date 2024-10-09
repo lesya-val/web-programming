@@ -34,6 +34,9 @@
 						<li class="nav__item">
 							<a href="./alboms_page.php" class="nav__link nav__link--hover-light">Альбомы</a>
 						</li>
+						<li>
+						<a href="../php/logout.php" class="nav__link nav__link--hover-light">Выход</a>
+						</li>
 					</ul>
 				</nav>
 

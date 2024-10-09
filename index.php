@@ -1,3 +1,9 @@
+<!-- <?php
+$password = 'admin_password'; // Ваш пароль
+$hashed_password = password_hash($password, PASSWORD_DEFAULT); // Хеширование пароля
+echo $hashed_password; // Вывод хешированного пароля
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
