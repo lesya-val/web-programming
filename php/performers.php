@@ -17,12 +17,4 @@ $performers = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 mysqli_close($link);
 
-function formatTime($time)
-{
-	$timeParts = explode(':', $time);
-	$minutes = $timeParts[1];
-	$seconds = $timeParts[2];
-	return $minutes . ':' . $seconds;
-}
-
 ?>

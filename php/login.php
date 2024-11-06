@@ -21,12 +21,7 @@ if (empty($login) || empty($password)) {
 			$_SESSION['login'] = $user['login'];
 			$_SESSION['role'] = $user['role'];
 
-			// Перенаправление в зависимости от роли
-			if ($user['role'] == 'admin') {
-				header("Location: ../pages/admin_page.php");
-			} else {
-				header("Location: ../pages/compositions_page.php");
-			}
+			header("Location: ../pages/compositions_page.php");
 		} else {
 			echo "Неверный пароль";
 		}

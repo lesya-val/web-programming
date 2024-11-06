@@ -18,6 +18,7 @@
 .alboms__info {
 	display: flex;
 	flex-direction: column;
+	width: 170px;
 	gap: 5px;
 }
 

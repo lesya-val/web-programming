@@ -1,3 +1,10 @@
+<!-- <?php
+$hashed_password = password_hash("admin_password", PASSWORD_DEFAULT);
+
+// Вывод хешированного пароля на экран
+echo "Зашифрованный пароль: " . $hashed_password;
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 

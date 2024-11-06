@@ -51,6 +51,15 @@
 	color: rgba(0, 0, 0, 50%);
 }
 
+.admin-icons {
+	display: flex;
+	gap: 5px;
+}
+
+.admin-icon {
+	width: 25%;
+}
+
 @media screen and (max-width: 700px) {
 	.container {
 		padding: 30px 20px;

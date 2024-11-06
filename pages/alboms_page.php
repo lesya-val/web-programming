@@ -1,5 +1,16 @@
-<?php include '../php/alboms.php'; ?>
-<?php include '../pages/header.php'; ?>
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+	header("Location: login.php");
+	exit();
+}
+
+// Проверка на роль администратора
+$isAdmin = isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
+
+include '../php/alboms.php';
+include '../pages/header.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,18 +32,32 @@
 			<div class="container">
 				<div class="content">
 					<h1 class="title">Альбомы</h1>
+					<?php if ($isAdmin): ?>
+						<a href="add_page.php&table=alboms">Добавить альбом</a>
+					<?php endif; ?>
 					<nav class="list">
 						<ul class="list__items alboms__items">
 							<?php foreach ($alboms as $albom) : ?>
 								<li class="list__item alboms__item">
 									<a href="./compositions_page.php">
-											<img class="alboms__image" src="../images/alboms/<?php echo htmlspecialchars($albom['cover']); ?>.svg" alt="albom" onerror="this.src='../icons/stub.png'" />
-										</a>
+										<img class="alboms__image" src="../images/alboms/<?php echo htmlspecialchars($albom['cover']); ?>.svg" alt="albom" onerror="this.src='../icons/stub.png'" />
+									</a>
 									<div class="alboms__info">
 										<p><?php echo htmlspecialchars($albom['name']); ?></p>
 										<p class="translucent"><?php echo htmlspecialchars($albom['artist']); ?></p>
 										<p class="translucent"><?php echo htmlspecialchars($albom['year']); ?></p>
 									</div>
+									<?php if ($isAdmin): ?>
+										<!-- Панель для администратора -->
+										<div class="admin-icons">
+											<a href="edit_page.php?id=<?php echo $albom['id']; ?>&table=alboms" title="Редактировать" class="admin-icon">
+												<img src="../icons/edit.svg" alt="Редактировать" />
+											</a>
+											<a href="../php/delete_item.php?id=<?php echo $albom['id']; ?>&table=alboms" onclick="return confirm('Вы уверены, что хотите удалить жанр?');" title="Удалить" class="admin-icon">
+												<img src="../icons/delete.svg" alt="Удалить">
+											</a>
+										</div>
+									<?php endif; ?>
 								</li>
 							<?php endforeach; ?>
 						</ul>
