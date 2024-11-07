@@ -72,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$stmt->close();
 }
 include '../pages/header.php';
+include '../pages/loader.php';
 ?>
 
 <!DOCTYPE html>

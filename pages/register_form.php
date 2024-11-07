@@ -1,9 +1,11 @@
-<!-- <?php
-$hashed_password = password_hash("admin_password", PASSWORD_DEFAULT);
+<?php
+// $hashed_password = password_hash("admin_password", PASSWORD_DEFAULT);
 
 // Вывод хешированного пароля на экран
-echo "Зашифрованный пароль: " . $hashed_password;
-?> -->
+// echo "Зашифрованный пароль: " . $hashed_password;
+
+include '../pages/loader.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">

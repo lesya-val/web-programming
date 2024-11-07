@@ -10,6 +10,7 @@ $isAdmin = isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
 
 include '../php/compositions.php';
 include '../pages/header.php';
+include '../pages/loader.php';
 include '../php/format_time.php'
 ?>
 
