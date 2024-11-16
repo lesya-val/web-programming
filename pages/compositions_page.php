@@ -38,7 +38,7 @@ include '../php/format_time.php'
 				<div class="main__content content">
 					<h1 class="title">Композиции</h1>
 					<?php if ($isAdmin): ?>
-						<a class="form__button" href="add_page.php?&table=compositions">Добавить композицию</a>
+						<button class="form__button" href="add_page.php?&table=compositions">Добавить композицию</button>
 					<?php endif; ?>
 					<nav class="list">
 						<ul class="list__items main__items">

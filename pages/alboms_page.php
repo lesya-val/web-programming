@@ -34,7 +34,7 @@ include '../pages/loader.php';
 				<div class="content">
 					<h1 class="title">Альбомы</h1>
 					<?php if ($isAdmin): ?>
-						<a class="form__button" href="add_page.php&table=alboms">Добавить альбом</a>
+						<button class="form__button" href="add_page.php&table=alboms">Добавить альбом</button>
 					<?php endif; ?>
 					<nav class="list">
 						<ul class="list__items alboms__items">

@@ -34,7 +34,7 @@ include '../pages/loader.php';
 				<div class="content">
 					<h1 class="title">Исполнители</h1>
 					<?php if ($isAdmin): ?>
-						<a class="form__button" href="add_page.php&table=performers">Добавить исполнителя</a>
+						<button class="form__button" href="add_page.php&table=performers">Добавить исполнителя</button>
 					<?php endif; ?>
 					<nav class="list">
 						<ul class="list__items performers__items">

@@ -34,7 +34,7 @@ include '../pages/loader.php';
 				<div class="content">
 					<h1 class="title">Жанры</h1>
 					<?php if ($isAdmin): ?>
-						<a class="form__button" href="add_page.php&table=genres">Добавить жанр</a>
+						<button class="form__button" href="add_page.php&table=genres">Добавить жанр</button>
 					<?php endif; ?>
 					<nav class="list">
 						<ul class="list__items genres__items">
